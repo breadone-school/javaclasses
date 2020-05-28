@@ -11,7 +11,7 @@ public class Monster {
         this.damageavg = damageSeed;
     }
 
-    public int attack() {
+    public int Attack() {
         int dmgalt = rnd.nextInt(5);
 
         if (rnd.nextBoolean() == true) {

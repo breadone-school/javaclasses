@@ -7,7 +7,7 @@ public class Main {
         Monster test = new Monster(75, 10);
 
         //eg attack on player
-        p1.health += test.attack();
+        p1.health += test.Attack();
 
 
 
