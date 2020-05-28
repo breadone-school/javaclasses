@@ -1,4 +1,4 @@
-public class Main {
+public class Game {
     
     public static void main(String args[]) {
         System.out.print("enter your character's name: ");
@@ -7,8 +7,9 @@ public class Main {
         Monster test = new Monster(75, 10);
 
         //eg attack on player
-        p1.health += test.Attack();
+        p1.health -= test.Attack();
 
 
     }
+    
 }
