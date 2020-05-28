@@ -12,12 +12,12 @@ public class Monster {
     }
 
     public int Attack() {
-        int dmgalt = rnd.nextInt(5);
+        int dmgalt = rnd.nextInt(5); //damage to increase/decrease by (+/- 5)
 
-        if (rnd.nextBoolean() == true) {
-            return damageavg + dmgalt;
+        if (rnd.nextBoolean() == true) { //decide whether alteration is +ve or -ve
+            return -(damageavg + dmgalt);
         } else {
-            return damageavg - dmgalt;
+            return -(damageavg - dmgalt);
         }
     }
 

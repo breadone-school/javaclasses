@@ -7,8 +7,10 @@ public class Main {
         Monster test = new Monster(75, 10);
 
         //eg attack on player
-        p1.health += test.Attack();
-
+        for (int i = 0; i < 10; i++) {
+            System.out.println(p1.health += test.Attack());
+            //p1.health = 100;
+        }
 
 
     }

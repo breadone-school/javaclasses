@@ -4,21 +4,21 @@ public class Player {
     Random rnd = new Random();
 
     String Name;
-    int health = 100;
-    int dmg = rnd.nextInt(20) + 5;
-    int CritChance = rnd.nextInt(49) + 1;
+    double health = 100;
+    double dmg = rnd.nextInt(20) + 5;
+    int CritChance = rnd.nextInt(25) + 10; //10 to 25 % crit chance
     
     Player(String name) {
         this.Name = name;
     }
 
-    public int Attack() {
-
-        if (rnd.nextInt(99) < CritChance){
-            return (dmg * 2);
+    public double Attack() {
+        if (rnd.nextInt(99) < CritChance) {
+            return (dmg * 1.5);
         } else {
             return dmg;
         }
     }
+
 
 }
