@@ -1,3 +1,4 @@
+package Game;
 import java.util.Random;
 
 public class Monster {
@@ -12,12 +13,12 @@ public class Monster {
     }
 
     public double Attack() {
-        int dmgalt = rnd.nextInt(5); //damage to increase/decrease by (+/- 5)
+        int dmgmod = rnd.nextInt(5); //damage to increase/decrease by (+/- 5)
 
         if (rnd.nextBoolean() == true) { //decide whether alteration is +ve or -ve
-            return damageavg + dmgalt;
+            return damageavg + dmgmod;
         } else {
-            return damageavg - dmgalt;
+            return damageavg - dmgmod;
         }
     }
 
