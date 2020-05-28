@@ -1,4 +1,8 @@
+import java.util.Random;
+
 public class Monster {
+    Random rnd = new Random();
+
     int health;
     int damageavg;
 
@@ -7,9 +11,14 @@ public class Monster {
         this.damageavg = damageSeed;
     }
 
-    public void attack(String player) {
+    public int attack() {
+        int dmgalt = rnd.nextInt(5);
 
-
+        if (rnd.nextBoolean() == true) {
+            return damageavg + dmgalt;
+        } else {
+            return damageavg - dmgalt;
+        }
     }
 
 }
