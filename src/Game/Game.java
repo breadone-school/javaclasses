@@ -1,6 +1,7 @@
 package Game;
 import java.util.Random;
 import Game.Items.*;
+import Game.Story.*;
 
 public class Game {
 
@@ -12,14 +13,13 @@ public class Game {
         Item sword = new sword_stone();
 
         //eg attack on player
-
         /*if (rnd.nextInt(99) < z1.SpecialChance) {
             p1.health -= z1.Attack();
         } else {
             p1.health -= z1.SpecialAttack();
         }*/
 
-
+        Intro.StartGame();
 
     }
     
