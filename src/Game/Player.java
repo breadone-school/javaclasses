@@ -22,6 +22,6 @@ public class Player {
         }
     }
 
-    public String[] Inventory = new String[19];
+    public int[] Inventory = new int[19]; //wow im using queues
 
 }
