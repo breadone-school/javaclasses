@@ -11,7 +11,7 @@ public class Zombie extends Monster {
     }
 
     public double SpecialAttack() {
-        return super.damageavg * SpecialMod; //special bypasses armour
+        return super.damageavg * SpecialMod; //special bypasses armour, deals more damage
     }
 
     
