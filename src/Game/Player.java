@@ -1,3 +1,4 @@
+package Game;
 import java.util.Random;
 
 public class Player {
@@ -6,7 +7,7 @@ public class Player {
     final String Name;
     double health = 100;
     double dmg = rnd.nextInt(20) + 5;
-    int armour = 0;
+    int armour = 1; //armour value less than 1
     int CritChance = rnd.nextInt(25) + 10; //10 to 25 % crit chance
     
     Player(String name) {
@@ -21,5 +22,6 @@ public class Player {
         }
     }
 
+    public int[] Inventory = new int[19]; //wow im using queues
 
 }
