@@ -13,15 +13,13 @@ public class Game {
 
         //eg attack on player
 
-        if (rnd.nextInt(99) < z1.SpecialChance) {
+        /*if (rnd.nextInt(99) < z1.SpecialChance) {
             p1.health -= z1.Attack();
         } else {
             p1.health -= z1.SpecialAttack();
-        }
+        }*/
 
 
-        System.out.println(p1.health);
-        System.out.println(sword.ID);
 
     }
     
