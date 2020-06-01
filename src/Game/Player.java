@@ -23,5 +23,5 @@ public class Player {
     }
 
     public int[] Inventory = new int[19]; //wow im using queues
-
+    public int invq;
 }
