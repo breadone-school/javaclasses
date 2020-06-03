@@ -1,10 +1,8 @@
 package Game.Story;
-import java.util.Scanner;
 import Game.*;
 
 public class Intro {
     public static void StartGame() {
-        Scanner scan = new Scanner(System.in);
         int usrchoice = -1;
         System.out.println("you awaken. dazed, aching, and hungry. The ground around you soaked in the frigid afternoon sun, the only sign of humanity is a cabin in the distance.");
         System.out.println();
@@ -20,6 +18,5 @@ public class Intro {
                 break;
         }
 
-        Player.Inv.Display();
     }
 }

@@ -9,9 +9,7 @@ public class Game {
     public static void main(String args[]) {
         Random rnd = new Random();
         Zombie z1 = new Zombie(75, 10);
-        Item sword = new sword_stone();
-
-
+        
         System.out.print("enter your character's name: ");
         p1 = new Player(System.console().readLine());
 

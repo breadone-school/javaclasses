@@ -23,62 +23,36 @@ public class Player {
         }
     }
 
-        //this is new
-        public static class Inv {
-            public static int[] Inventory = new int[19]; //wow im using queues
-            public static int invq = 0;
-    
-            public static void init(){
-                try {
-                    for (int i = 0; i < Inventory.length; i++) {Inventory[i] = -1;}
-                } catch (Exception e) {
-                    System.out.println("error in initialising inventory.");
-                }
+    public static class Inv {
+        static int[] Inventory = new int[19]; //wow im using queues
+        private static int invq = 0;
+        
+        public static void init() {
+            try {
+                for (int i = 0; i < Inventory.length; i++) {Inventory[i] = -1;}
+            } catch (Exception e) {
+                System.out.println("error in initialising inventory.");
             }
-
-            public static void Add(int nID) {
-                if (invq == Inventory.length) {
-                    System.out.println("inventory is full! ");
-                } else {
-                    Inventory[invq] = nID;
-                    invq += 1;
-                }
-            }
-
-            public static void Display() {
-                for (int i = 0; i < Inventory.length; i++) {
-                    if (Inventory[i] == -1) {
-                        continue;
-                    } else {
-                        System.out.println(Inventory[i]);
-                    }
-                }
-            }
-
         }
 
-    // public int[] Inventory = new int[19]; //wow im using queues
-    // public int invq = 0;
+        public static void Add(int nID) {
+            if (invq == Inventory.length) {
+                System.out.println("inventory is full!");
+            } else {
+                Inventory[invq] = nID;
+                invq += 1;
+            }
+        }
 
-    // void invinit() {
-    //    try {
-    //        for (int i = 0; i < Inventory.length; i++) {Inventory[i] = -1;}
-    //    } catch (Exception e) {
-    //        System.out.println("error in initialising inventory.");
-    //    }
-    //}
+        public static void Display() {
+            for (int i = 0; i < Inventory.length; i++) {
+                if (Inventory[i] == -1) {
+                    continue;
+                } else {
+                    System.out.println(Inventory[i]);
+                }
+            }
+        }
 
-   // public void invAdd(int itemid) {
-   //     if (invq == Inventory.length) {
-   //         System.out.println("inventory is full!");
-   //     } else {
-   //         Inventory[invq] = itemid;
-   //         invq += 1;
-   //     }
-   // }
-
-
-
-
-
+    }
 }
