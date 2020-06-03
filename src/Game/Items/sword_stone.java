@@ -11,6 +11,8 @@ public class sword_stone extends Item {
         recepie[0] = 0;
         recepie[1] = 0;
         recepie[2] = 1;
+
+        idtable.put(nID, ID);   
     }
 
 }

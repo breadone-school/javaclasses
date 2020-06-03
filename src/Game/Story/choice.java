@@ -8,7 +8,7 @@ public class choice {
     public static int makechoice(String c1, String c2) {
         int choice = -1;
         System.out.println("1. " + c1 + "\n" + "2. " + c2 + "\n" + "3. open inventory" + "\n" + "4. stats");
-        
+        System.out.print("your choice: ");       
         try {
             choice = Integer.parseInt(System.console().readLine());
         } catch (IOError e) {
@@ -29,7 +29,8 @@ public class choice {
     public static int makechoice(String c1, String c2, String c3) {
         int choice = -1;
         System.out.println("1. " + c1 + "\n" + "2. " + c2 + "\n" + "3. " + c3 + "\n" + "4. open inventory" + "\n" + "5. stats");
-        
+        System.out.print("your choice: "); 
+
         try {
             choice = Integer.parseInt(System.console().readLine());
         } catch (IOError e) {
@@ -50,6 +51,7 @@ public class choice {
     public static int makechoice(String c1, String c2, String c3, String c4) {
         int choice = -1;
         System.out.println("1. " + c1 + "\n" + "2. " + c2 + "\n" + "3. " + c3 + "\n" + c4 + "\n" + "5. open inventory" + "\n" + "6. stats");
+        System.out.print("your choice: "); 
         
         try {
             choice = Integer.parseInt(System.console().readLine());

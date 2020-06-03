@@ -1,5 +1,6 @@
 package Game;
 import java.util.Random;
+import Game.Items.Item;
 
 public class Player {
     Random rnd = new Random();
@@ -49,10 +50,11 @@ public class Player {
                 if (Inventory[i] == -1) {
                     continue;
                 } else {
-                    System.out.println(Inventory[i]);
+                    System.out.println(Inventory[i]);    
+                    System.out.println(Item.idtable.get(Inventory[i]));
+                    //System.out.println(Inventory[i]);  
                 }
             }
         }
-
     }
 }

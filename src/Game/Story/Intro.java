@@ -17,6 +17,6 @@ public class Intro {
                 Player.Inv.Add(3);
                 break;
         }
-
+            Player.Inv.Display();
     }
 }
