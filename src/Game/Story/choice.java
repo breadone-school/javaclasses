@@ -1,6 +1,5 @@
 package Game.Story;
 import java.io.IOError;
-import java.util.Scanner;
 import Game.*;
 
 public class choice {
@@ -17,7 +16,7 @@ public class choice {
         }
 
         if (choice == 3) {
-            DispInv();
+            Player.Inv.Display();
             return choice;
         } else if (choice == 4) {
             System.out.println(Game.p1.Name + "'s health is at " + Game.p1.health);
@@ -38,7 +37,7 @@ public class choice {
         }
 
         if (choice == 4) {
-            DispInv();
+            Player.Inv.Display();
             return choice;
         } else if (choice == 5) {
             System.out.println(Game.p1.health);
@@ -59,7 +58,7 @@ public class choice {
         }
 
         if (choice == 4) {
-            DispInv();
+            Player.Inv.Display();
             return choice;
         } else if (choice == 5) {
             System.out.println(Game.p1.health);
@@ -69,16 +68,4 @@ public class choice {
         }
     }
     
-
-    static void DispInv() {
-        for (int i = 0; i < Game.p1.Inventory.length; i++) {
-            if (Game.p1.Inventory[i] == -1) {
-                continue;
-            } else {
-                System.out.println(Game.p1.Inventory[i]);
-            }
-        }
-    }
-
-
 }

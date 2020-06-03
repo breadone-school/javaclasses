@@ -16,10 +16,10 @@ public class Intro {
                 break;
             case 2:
                 System.out.println("you find some meager berries. Stuffing them in your pockets, you begin the journey to the cabin.");
-                //Player.invAdd(3);
-                Game.p1.Inventory[0] = 3;
+                Player.Inv.Add(3);
                 break;
         }
 
+        Player.Inv.Display();
     }
 }
