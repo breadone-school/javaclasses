@@ -1,30 +1,19 @@
 package Game;
-import java.util.Random;
 import Game.Items.*;
 import Game.Story.*;
 
 public class Game {
     public static Player p1;
+    public static Item STONE = new stone();
+    public static Item BERR = new berries();
+    public static Item SWORD_STONE = new sword_stone();
+    public static Item WOOD = new wood();
+    
 
     public static void main(String args[]) {
-        Random rnd = new Random();
-        Zombie z1 = new Zombie(75, 10);
-        
         System.out.print("enter your character's name: ");
         p1 = new Player(System.console().readLine());
 
-        //eg attack on player
-        /*if (rnd.nextInt(99) < z1.SpecialChance) {
-            p1.health -= z1.SpecialAttack();
-        } else {
-            p1.health -= z1.Attack();
-        }*/
-        
-        
-
         Intro.StartGame();
-
     }
-    
-
 }

@@ -28,7 +28,7 @@ public class Player {
         static int[] Inventory = new int[19]; //wow im using queues
         private static int invq = 0;
         
-        public static void init() {
+        private static void init() {
             try {
                 for (int i = 0; i < Inventory.length; i++) {Inventory[i] = -1;}
             } catch (Exception e) {
@@ -45,14 +45,21 @@ public class Player {
             }
         }
 
+        /*public static void Add(String ID) {
+            if (invq == Inventory.length) {
+                System.out.println("inventory is full!");
+            } else {
+                int tempID = Item.idtable.get(ID);
+            }
+        }*/
+
         public static void Display() {
+            System.out.println("your inventory has: ");  
             for (int i = 0; i < Inventory.length; i++) {
                 if (Inventory[i] == -1) {
                     continue;
-                } else {
-                    System.out.println(Inventory[i]);    
-                    System.out.println(Item.idtable.get(Inventory[i]));
-                    //System.out.println(Inventory[i]);  
+                } else { 
+                    System.out.println(Item.idtable.get(Inventory[i])); 
                 }
             }
         }

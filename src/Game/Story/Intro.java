@@ -1,5 +1,6 @@
 package Game.Story;
 import Game.*;
+import Game.Items.*;
 
 public class Intro {
     public static void StartGame() {
@@ -14,7 +15,7 @@ public class Intro {
                 break;
             case 2:
                 System.out.println("you find some meager berries. Stuffing them in your pockets, you begin the journey to the cabin.");
-                Player.Inv.Add(3);
+                Player.Inv.Add(Item.BERR.nID);
                 break;
         }
             Player.Inv.Display();
