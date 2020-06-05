@@ -36,7 +36,16 @@ public class Player {
             }
         }
 
-        public static void Add(int nID) {
+        public static void Add(Item item) {
+            if (invq == Inventory.length) {
+                System.out.println("inventory is full!");
+            } else {
+                Inventory[invq] = item.nID;
+                invq += 1;
+            }
+        }
+
+        public static void Add(int nID) {  //legacy ig
             if (invq == Inventory.length) {
                 System.out.println("inventory is full!");
             } else {
@@ -44,14 +53,6 @@ public class Player {
                 invq += 1;
             }
         }
-
-        /*public static void Add(String ID) {
-            if (invq == Inventory.length) {
-                System.out.println("inventory is full!");
-            } else {
-                int tempID = Item.idtable.get(ID);
-            }
-        }*/
 
         public static void Display() {
             System.out.println("your inventory has: ");  

@@ -6,6 +6,7 @@ public class berries extends Item {
         ID = "berries";
         nID = 3;
         idtable.put(nID, ID);
+        Classification = 1;
     }
 
 }

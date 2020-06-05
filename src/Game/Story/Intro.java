@@ -15,7 +15,7 @@ public class Intro {
                 break;
             case 2:
                 System.out.println("you find some meager berries. Stuffing them in your pockets, you begin the journey to the cabin.");
-                Player.Inv.Add(Item.BERR.nID);
+                Player.Inv.Add(Item.BERRIES);
                 break;
         }
             Player.Inv.Display();

@@ -7,6 +7,7 @@ public class sword_stone extends Item {
         nID = 2;
         durability = 64;
         lootchance = 15;
+        Classification = 2;
                     
         recepie[0] = 0;
         recepie[1] = 0;

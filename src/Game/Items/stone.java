@@ -6,7 +6,7 @@ public class stone extends Item {
         ID = "stone";
         nID = 0;
         lootchance = 55;
-
+        Classification = 0;
         idtable.put(nID, ID);
     }
 
