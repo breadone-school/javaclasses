@@ -11,7 +11,7 @@ public class choice {
         System.out.print("your choice: ");       
         try {
             choice = Integer.parseInt(System.console().readLine());
-        } catch (IOError e) {
+        } catch (NumberFormatException e) {
             System.out.println("enter a number");
         }
 
